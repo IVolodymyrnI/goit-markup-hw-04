@@ -416,6 +416,8 @@ img {
 .client-list .item {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .client-list .item + .item {
@@ -424,7 +426,6 @@ img {
 
 .customers .client-link {
   display: flex;
-  width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -443,56 +444,6 @@ img {
 .customers .client-list .item:hover,
 .customers .client-list .item:focus {
   border-color: var(--accent-color);
-}
-
-/* Projects */
-
-.projects-list {
-  display: flex;
-  /* margin: -15px -15px; */
-  flex-wrap: wrap;
-}
-
-.projects-list .item {
-  flex-basis: calc((100% - 60px) / 3);
-  /* margin: 15px 15px; */
-}
-
-.projects-list .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-list .item:not(:nth-child(3n + 1)) {
-  margin-left: 30px;
-}
-
-.projects-list .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.projects-list .item .content {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
-.project-name {
-  margin-bottom: 4px;
-
-  color: var(--heads-color);
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  line-height: 2;
-}
-
-.project-type {
-  color: var(--primary-texts-color);
-  font-size: 16px;
-  line-height: 1.88;
 }
 
 /* Footer */
@@ -560,4 +511,54 @@ img {
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--accent-color);
+}
+
+/* Projects */
+
+.projects-list {
+  display: flex;
+  /* margin: -15px -15px; */
+  flex-wrap: wrap;
+}
+
+.projects-list .item {
+  flex-basis: calc((100% - 60px) / 3);
+  /* margin: 15px 15px; */
+}
+
+.projects-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-list .item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+
+.projects-list .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.projects-list .item .content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.project-name {
+  margin-bottom: 4px;
+
+  color: var(--heads-color);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.project-type {
+  color: var(--primary-texts-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
