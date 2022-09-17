@@ -396,6 +396,7 @@ img {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -421,7 +422,6 @@ img {
 }
 
 .footer .social-media {
-  padding-top: 15px;
   margin-left: 70px;
 }
 
